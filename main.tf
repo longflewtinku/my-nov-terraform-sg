@@ -16,7 +16,7 @@ resource "aws_vpc_security_group_ingress_rule" "myingressrules" {
 }
 resource "aws_key_pair" "myownkey" {
     key_name = "mysshownkey"
-    public_key = file("C:/Users/laxmikanth/.ssh/id_ed25519.pub")
+    public_key = file("~/.ssh/id_ed25519.pub")
   
 }
 resource "aws_instance" "myec2" {
